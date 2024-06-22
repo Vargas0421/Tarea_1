@@ -8,12 +8,11 @@ public class Biblioteca extends Libro implements ToString {// hereda de Libro e 
 
     protected LinkedList<Libro> libreria; // se crea la lista de libros
     protected LinkedList<Libro> librosPrestados = new LinkedList<>();// se crea la lista de libros prestados 
-    
 
     public Biblioteca() { // se crea el constructor de la biblioteca
         libreria = new LinkedList<>();
     }
-   
+
     public void crearLibros() { // se crea ya una lista de libros para que cuando cargue el programa ya tenga informacino 
         libreria.add(new Libro(new Autor("Nicaraguense", "10/02/2001", "Carlos", "Virila"), "LaFlor", "21/2/1990", Libro.disposicion.libre, Libro.genero.Libros_de_ciencia));
         libreria.add(new Libro(new Autor("Costarricense", "15/05/1985", "Ana", "Gonzalez"), "El Bosque Encantado", "11/06/2005", Libro.disposicion.libre, Libro.genero.Comics));
@@ -33,8 +32,6 @@ public class Biblioteca extends Libro implements ToString {// hereda de Libro e 
         }
         return librosPrestados;
     }
-    
-    
 
     public Libro seleccionarLibro() {// metodo por el cual se puede seleecionar un libro 
         JComboBox<Libro> librosDropdown = new JComboBox<>(); // se crea un combobox 
@@ -51,7 +48,9 @@ public class Biblioteca extends Libro implements ToString {// hereda de Libro e 
     public Libro seleccionarLibroUsuario(Ususario u) { // misma funcion que la de arriba pero toma la lisa de cada usuario la cual se encuntra en los atributos del mismo 
         JComboBox<Libro> librosDropdown = new JComboBox<>();// se crea un combobox  
         for (Libro libro : u.getLibros()) {// se recorre la libreria (lista de libros de cada usuario)
-            librosDropdown.addItem(libro);// se muestra todas las opciones
+            if (libro.getEstadoDelibro() == estadoDelibro.libre) { // si el estado del libro es libre
+                librosDropdown.addItem(libro);// se muestra todas las opciones
+            }
         }
         int opcion = JOptionPane.showConfirmDialog(null, librosDropdown, "Seleccione un usuario", JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE);
         if (opcion == JOptionPane.OK_OPTION) {
@@ -71,7 +70,7 @@ public class Biblioteca extends Libro implements ToString {// hereda de Libro e 
         u.getLibros().add(l);// se toma la lista de libros del ususario
         l.setOwner(u);
         l.setFecha_del_prestamo(a);
-        l.setFecha_aprox_de_devolucion(JOptionPane.showInputDialog("Ingrese lka fecha aproximada de devolucion en el formato dd/mm/year"));
+        l.setFecha_aprox_de_devolucion(JOptionPane.showInputDialog("Ingrese la fecha aproximada de devolucion en el formato dd/mm/year"));
         l.setEstadoDelibro(Libro.disposicion.prestado);// se cambia la disposicion del libro 
         librosPrestados.add(l);// se agrega el libro prestadoa a la lista de libros prestados 
         return null;

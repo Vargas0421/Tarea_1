@@ -36,17 +36,6 @@ public class Libro implements ToString {
         this.tiposDeGenero = tiposDeGenero;
     }
 
-    public Libro( Autor autor, String titulo, String fechaDePublicacion, disposicion estadoDelibro, genero tiposDeGenero, String fecha_del_prestamo, String fecha_aprox_de_devolucion, Ususario owner) {
-        this.autor = autor;
-        this.titulo = titulo;
-        this.fechaDePublicacion = fechaDePublicacion;
-        this.estadoDelibro = estadoDelibro;
-        this.tiposDeGenero = tiposDeGenero;
-        this.fecha_del_prestamo = fecha_del_prestamo;
-        this.fecha_aprox_de_devolucion = fecha_aprox_de_devolucion;
-        this.owner = owner;
-    }
-
     public Libro createLibro() { // funcion mediante la cual se crea un libro 
         Libro newLibro = new Libro();// se crea un libro 
         Autor newAutor = new Autor();// se crea un autor 
@@ -82,8 +71,6 @@ public class Libro implements ToString {
     public void setOwner(Ususario owner) {
         this.owner = owner;
     }
-    
-    
 
     public Autor getAutor() {
         return autor;
