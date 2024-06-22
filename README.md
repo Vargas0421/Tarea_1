@@ -52,6 +52,9 @@ Desarrollar un sistema de gestión de biblioteca que permita administrar libros,
 Puedes visualizar el diagrama de clase del proyecto en el siguiente enlace:  
 [Diagrama de Clase en Lucidchart](https://lucid.app/lucidchart/afb49bd8-0d71-4a52-901d-debc39f12b8c/edit?invitationId=inv_ad7d6234-1318-4d99-a5af-c4c1156caeb2)
 
+### Prueba de ejecucion:
+[Pruebas de ejecucion](https://ufidelitas-my.sharepoint.com/:w:/g/personal/bvargas40854_ufide_ac_cr/EQYlmkQQaYJItecjNpT_oWMBxw9Xtb1xdkvyXr-Y3SRrcw?e=BaYjuF)
+
 ### Estructura del Proyecto:
 El proyecto está organizado en las siguientes clases:
 
