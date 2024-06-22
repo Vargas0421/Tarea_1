@@ -46,20 +46,6 @@ La interfaz gráfica está implementada utilizando las librerías Swing de Java.
 - **JOptionPane**: Utilizado para mostrar cuadros de diálogo para la entrada y salida de datos.
 - **JComboBox**: Utilizado para desplegar listas desplegables de elementos, como usuarios y géneros de libros, permitiendo una selección fácil y rápida.
   
-Ejemplo de uso de JComboBox para seleccionar un usuario:
-```java
-public Ususario seleccionarUsuario() {
-    JComboBox<Ususario> usuariosDropdown = new JComboBox<>();
-    for (Ususario usuario : listaDeUsusarios) {
-        usuariosDropdown.addItem(usuario);
-    }
-    
-    int opcion = JOptionPane.showConfirmDialog(null, usuariosDropdown, "Seleccione un usuario", JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE);
-    if (opcion == JOptionPane.OK_OPTION) {
-        return (Ususario) usuariosDropdown.getSelectedItem();
-    }
-    return null;
-}
 
 Clona o descarga el repositorio en tu máquina local.
 Abre el proyecto en tu entorno de desarrollo Java preferido (por ejemplo, IntelliJ IDEA, Eclipse).
@@ -67,7 +53,7 @@ Ejecuta la clase Practica_programada_1 para iniciar el programa.
 Utiliza el menú interactivo para acceder a las diferentes funcionalidades del sistema.
 
 
-Requisitos del Sistema:
+### Requisitos del Sistema:
 Java JDK: Versión 8 o superior.
 Entorno de Desarrollo Integrado (IDE): NeatBens
 Contacto: vargasmoreirabranbdon@gamail.com   #83690296
