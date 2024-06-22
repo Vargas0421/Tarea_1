@@ -10,6 +10,37 @@
 ### Descripción del Proyecto:
 Este proyecto es una implementación de un sistema básico de gestión de usuarios y libros utilizando Java. El sistema permite crear, mostrar y gestionar usuarios y libros, así como realizar operaciones básicas relacionadas con la biblioteca. Además, incluye una interfaz gráfica de usuario (GUI) para facilitar la interacción con el sistema.
 
+# Problema
+
+Desarrollar un sistema de gestión de biblioteca que permita administrar libros, autores, préstamos y usuarios. El sistema debe cumplir con los siguientes requisitos:
+
+## Funcionalidades
+
+### Libros:
+- **Almacenar Información:** Título, autor, fecha de publicación, género y disponibilidad.
+- **Tipos de Libros:** Revistas, Mangas, Libros de literatura, Libros de ciencia, Comics, entre otros.
+- **Mostrar Listado:** Todos los libros disponibles y prestados.
+
+### Autores:
+- **Almacenar Información:** Nombre, apellido, nacionalidad y fecha de nacimiento.
+- **Mostrar Listado:** Todos los autores.
+
+### Usuarios:
+- **Almacenar Información:** Nombre, apellido, dirección, teléfono y número de identificación.
+- **Registro de Nuevos Usuarios:** Permitir el registro de nuevos usuarios.
+- **Consulta de Información:** Permitir la consulta de información de usuario.
+
+### Préstamos:
+- **Registrar Préstamos:** Registrar préstamos de libros a usuarios.
+- **Fechas de Préstamo:** Registrar la fecha de préstamo y la fecha de devolución estimada (puede ser implementado mediante strings).
+
+## Requisitos Técnicos:
+- **Programación Orientada a Objetos:** Implementar conceptos básicos en Java, incluyendo clases, objetos, métodos, atributos, constructores, encapsulamiento, herencia, polimorfismo e interfaces.
+- **Colecciones de Java:** Utilizar colecciones para almacenar y gestionar información sobre libros, autores, usuarios y préstamos.
+- **Manejo de Excepciones:** Implementar el manejo de excepciones para gestionar errores durante la ejecución del programa.
+- **Interfaz de Usuario:** Diseñar una interfaz que permita al usuario interactuar con el sistema de manera intuitiva.
+
+
 ### Funcionalidades:
 1. **Crear Usuario:** Permite crear un nuevo usuario ingresando información como ID, nombre, apellido, número de teléfono y dirección.
 2. **Mostrar Usuarios:** Muestra una lista de todos los usuarios registrados.
