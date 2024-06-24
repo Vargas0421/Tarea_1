@@ -8,7 +8,7 @@ public class Practica_programada_1 {
     public static void main(String[] args) {
         Ususario createUser = new Ususario();
         Biblioteca biblioteca = new Biblioteca();
-        String fecha = JOptionPane.showInputDialog("Ingrese la decha de hoy en el formato dd/mm/year");
+        String fecha = JOptionPane.showInputDialog("Ingrese la fecha de hoy en el formato dd/mm/year");
 
         //LinkedList<Ususario> listaDeUsusarios = new LinkedList<>();
         biblioteca.crearLibros();
